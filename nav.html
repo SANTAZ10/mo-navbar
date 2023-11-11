@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nav</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="nav.css" />
+  </head>
+  <body>
+    <div class="navbar-container">
+      <div class="navLogo">
+        <div>
+          <img src="leftLogo.png" alt="left logo" class="leftLogo" />
+        </div>
+        <div class="centerText">
+          <div>SPEED EXPRESS INTERNATIONAL</div>
+          <div>LOGISTICS & COURIER LIMITED</div>
+        </div>
+        <div>
+          <img src="rightLogo.png" alt="left logo" class="rightLogo" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="navbar">
+          <a href="#">Home</a>
+          <div class="dropdown">
+            <a href="#">About Us</a>
+            <div class="dropdown-content">
+              <a href="#">Option 1</a>
+              <a href="#">Option 2</a>
+            </div>
+          </div>
+          <a href="#">Track Shipments</a>
+          <a href="#">Contacts</a>
+        </div>
+      </div>
+
+      <div class="mobile">
+        <div>
+          <img src="leftLogo.png" alt="left logo" class="leftLogo" />
+        </div>
+        <div class="sidebar">
+          <div class="mobile-links">
+            <a href="#" onclick="closeSidebar()">✕</a>
+            <a href="#">Home</a>
+            <div class="dropdown">
+              <a href="#" onclick="toggleMobileDropdown()">About Us</a>
+              <div class="mobile-dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+              </div>
+            </div>
+            <a href="#" class="track-shipment">Track Shipments</a>
+            <a href="#">Contacts</a>
+          </div>
+        </div>
+        <div class="mobile-navbar">
+          <div class="hamburger-icon" onclick="openSidebar()">☰</div>
+        </div>
+      </div>
+
+      <script src="nav.js"></script>
+    </div>
+  </body>
+</html>
